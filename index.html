@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocultar mensaje</title>
+    <link rel="stylesheet" href="./styles/style.css"
+</head>
+<body class="body">
+    <header>
+        <nav class="nav">
+            <a class="nav_links" href="index.html">Encriptador</a>
+            <a class="nav_links" href="about.html">Sobre mi</a>
+        </nav>
+    </header>
+    <main class="main">
+        <div>
+        <textarea  name="Txt_Ingreso" id="Txt_Ingreso" rows="10" cols="55" placeholder="Ingrese el mensaje" onkeypress="return (event.charCode >= 97 && event.charCode <= 122 || event.charCode == 32 || event.charCode == 241)"></textarea>
+        <button class="boton" onclick="ConvertEcrypt()">Encriptar</button>
+        </div>
+        <div>
+        <textarea name="Txt_Resultado" id="Txt_Resultado" rows="10" cols="55" placeholder="Mensaje encriptado" disabled></textarea>
+        <button class="boton" onclick="ConvertDecrypt()">Desencriptar</button>
+        <button class="btnCopiar" onclick="CopyandPage()">Copiar texto</button>
+        </div>
+    </main>
+  
+    <footer class="footer_Principal">
+        <p class="footer">CHALLENGE - ENCRIPTADOR DE TEXTO by Jesus Huerta</p>
+    </footer>
+    <script src="./js/index.js"></script>
+</body>
+</html>
